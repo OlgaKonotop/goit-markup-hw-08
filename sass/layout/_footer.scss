@@ -1,15 +1,33 @@
 .footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-
   background-color: var(--bg-dark-cl);
 }
+
 .footer__container {
-  display: flex;
-  align-items: baseline;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    text-align: left;
+  }
 }
 .footer__contact {
-  margin-right: 70px;
+  @media screen and (min-width: 768px) {
+    margin-right: 165px;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+    margin-bottom: 0;
+  }
 }
 
 .footer__addres {
@@ -22,12 +40,25 @@
 
 .addres__addres,
 .addres__item {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 8px;
+  }
   margin-bottom: 9px;
 }
 
 .addres__contact {
   color: rgba(255, 255, 255, 0.6);
 }
+
+.footer__social {
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+// @media screen and (min-width: 768px) {
+//   margin-left: auto;
+// }
 
 .social__title {
   margin-bottom: 20px;
@@ -48,8 +79,4 @@
 }
 .footer__icon {
   fill: #ffffff;
-}
-
-.footer__subscription {
-  margin-left: auto;
 }
