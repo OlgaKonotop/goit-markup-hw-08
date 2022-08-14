@@ -1,12 +1,26 @@
 .examples {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .examples__list {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--indent);
-  --items: 3;
+  // gap: var(--indent);
+
+  @media screen and (min-width: 480px) {
+    --items: 1;
+  }
+  @media screen and (min-width: 768px) {
+    --items: 2;
+  }
+  @media screen and (min-width: 1200px) {
+    --items: 3;
+  }
 }
 
 .examples__item {
@@ -60,6 +74,7 @@
 .examples__name {
   border: 1px solid #eeeeee;
   border-top: none;
+  width: 100%;
 
   padding-top: 20px;
   padding-bottom: 20px;
@@ -68,6 +83,7 @@
 }
 .examples__title {
   margin-bottom: 4px;
+  width: 100%;
 
   font-weight: 700;
   font-size: 18px;

@@ -4,12 +4,24 @@
   background-color: #f5f4fa;
 }
 .team__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .team__list {
-  display: flex;
-  gap: var(--indent);
+  @media screen and (max-width: 767px) {
+    --items: 1;
+  }
+  @media screen and (min-width: 768px) {
+    --items: 2;
+  }
+  @media screen and (min-width: 1200px) {
+    --items: 4;
+  }
+  // display: flex;
+  // gap: var(--indent);
 }
 
 .team__item {

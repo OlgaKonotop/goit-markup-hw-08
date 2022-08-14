@@ -149,8 +149,8 @@
 
 .menu-social__link {
   padding: 10px;
+}
 
-  &:first-child {
-    padding-left: 0;
-  }
+.menu-social__items:first-child .menu-social__link {
+  padding-left: 0;
 }
