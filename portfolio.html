@@ -14,7 +14,7 @@
 		integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="./css/main.css" />
-	<link rel="stylesheet" href="./css/styles.css" />
+	<!-- <link rel="stylesheet" href="./css/styles.css" /> -->
 </head>
 
 <body>
@@ -63,12 +63,32 @@
 				<li class="filter__item"><button class="filter__btn" type="button">Дизайн</button></li>
 				<li class="filter__item"><button class="filter__btn" type="button">Маркетинг</button></li>
 			</ul>
-			<ul class="list examples__list">
+			<ul class="list examples__list card-set">
 				<li class="examples__item card-set__item">
-					<a class="link" href="">
+					<a class="link examples__link" href="">
 						<div class="examples__wrap">
-							<img class="examples__img" src="./images/portfolio/foto.jpg" alt="Портретные фото двух девушек и мужчины"
-								width="370" height="294">
+							<picture>
+								<source media="(min-width:1200px)" srcset="./images/portfolio/img-1@1x_lg.webp 1x,
+									 ./images/portfolio/img-1@2x_lg.webp 2x" type="image/webp" />
+
+								<source media="(min-width:1200px)" srcset="./images/portfolio/img-1@1x_lg.jpg 1x,
+										./images/portfolio/img-1@2x_lg.jpg 2x " type="image/jpg" />
+
+								<source media="(min-width:768px)" srcset="./images/portfolio/img-1@1x_md.webp 1x,
+									 ./images/portfolio/img-1@2x_md.webp 2x" type="image/webp" />
+
+								<source media="(min-width:768px)" srcset="./images/portfolio/img-1@1x_md.jpg 1x,
+										./images/portfolio/img-1@2x_md.jpg 2x " type="image/jpg" />
+
+								<source media="(max-width:767px)" srcset="./images/portfolio/img-1@1x_sm.webp 1x,
+										./images/portfolio/img-1@2x_sm.webp 2x" type="image/webp" />
+
+								<source media="(max-width:767px)" srcset="./images/portfolio/img-1@1x_sm.jpg 1x,
+										./images/portfolio/img-1@2x_sm.jpg 2x " type="image/jpg" />
+
+								<img class="examples__img" src="./images/portfolio/img-1@1x_lg.jpg"
+									alt="Портретні фото чоловіка та жінки" width="450" height="294">
+							</picture>
 							<div class="overlay">
 								<p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
 									Все це дозволить відвідувачу отримати
@@ -82,10 +102,30 @@
 					</a>
 				</li>
 				<li class="examples__item card-set__item">
-					<a class="link" href="">
+					<a class="examples__link link" href="">
 						<div class="examples__wrap">
-							<img class="examples__img" src="./images/portfolio/basketball.jpg" alt="2 баскетболиста борятся за мяч"
-								width="370" height="294">
+							<picture>
+								<source media="(min-width:1200px)" srcset="./images/portfolio/img-2@1x_lg.webp 1x,
+															 ./images/portfolio/img-2@2x_lg.webp 2x" type="image/webp" />
+
+								<source media="(min-width:1200px)" srcset="./images/portfolio/img-2@1x_lg.jpg 1x,
+																./images/portfolio/img-2@2x_lg.jpg 2x " type="image/jpg" />
+
+								<source media="(min-width:768px)" srcset="./images/portfolio/img-2@1x_md.webp 1x,
+															 ./images/portfolio/img-2@2x_md.webp 2x" type="image/webp" />
+
+								<source media="(min-width:768px)" srcset="./images/portfolio/img-2@1x_md.jpg 1x,
+																./images/portfolio/img-2@2x_md.jpg 2x " type="image/jpg" />
+
+								<source media="(max-width:767px)" srcset="./images/portfolio/img-2@1x_sm.webp 1x,
+																./images/portfolio/img-2@2x_sm.webp 2x" type="image/webp" />
+
+								<source media="(max-width:767px)" srcset="./images/portfolio/img-2@1x_sm.jpg 1x,
+																./images/portfolio/img-2@2x_sm.jpg 2x " type="image/jpg" />
+
+								<img class="examples__img" src="./images/portfolio/img-2@1x_lg.jpg" alt="2 баскетболіста виборюють м'яч"
+									width="450" height="294">
+							</picture>
 							<div class="overlay">
 								<p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
 									Все це дозволить відвідувачу отримати
@@ -100,10 +140,30 @@
 					</a>
 				</li>
 				<li class="examples__item card-set__item">
-					<a class="link" href="">
+					<a class="examples__link link" href="">
 						<div class="examples__wrap">
-							<img class="examples__img" src="./images/portfolio/restaurant.jpg" alt="Эмблема ресторана" width="370"
-								height="294">
+							<picture>
+								<source media="(min-width:1200px)" srcset="./images/portfolio/img-3@1x_lg.webp 1x,
+																 ./images/portfolio/img-3@2x_lg.webp 2x" type="image/webp" />
+
+								<source media="(min-width:1200px)" srcset="./images/portfolio/img-3@1x_lg.jpg 1x,
+																	./images/portfolio/img-3@2x_lg.jpg 2x " type="image/jpg" />
+
+								<source media="(min-width:768px)" srcset="./images/portfolio/img-3@1x_md.webp 1x,
+																 ./images/portfolio/img-3@2x_md.webp 2x" type="image/webp" />
+
+								<source media="(min-width:768px)" srcset="./images/portfolio/img-3@1x_md.jpg 1x,
+																	./images/portfolio/img-3@2x_md.jpg 2x " type="image/jpg" />
+
+								<source media="(max-width:767px)" srcset="./images/portfolio/img-3@1x_sm.webp 1x,
+																	./images/portfolio/img-3@2x_sm.webp 2x" type="image/webp" />
+
+								<source media="(max-width:767px)" srcset="./images/portfolio/img-3@1x_sm.jpg 1x,
+																	./images/portfolio/img-3@2x_sm.jpg 2x " type="image/jpg" />
+
+								<img class="examples__img" src="./images/portfolio/img-3@1x_lg.jpg" alt="Емблема ресторану" width="450"
+									height="294">
+							</picture>
 							<div class="overlay">
 								<p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
 									Все це дозволить відвідувачу отримати
@@ -117,10 +177,30 @@
 					</a>
 				</li>
 				<li class="examples__item card-set__item">
-					<a class="link" href="">
+					<a class="examples__link link" href="">
 						<div class="examples__wrap">
-							<img class="examples__img" src="./images/portfolio/headphones.jpg" alt="Наушники" width="370"
-								height="294">
+							<picture>
+								<source media="(min-width:1200px)" srcset="./images/portfolio/img-4@1x_lg.webp 1x,
+																 ./images/portfolio/img-4@2x_lg.webp 2x" type="image/webp" />
+
+								<source media="(min-width:1200px)" srcset="./images/portfolio/img-4@1x_lg.jpg 1x,
+																	./images/portfolio/img-4@2x_lg.jpg 2x " type="image/jpg" />
+
+								<source media="(min-width:768px)" srcset="./images/portfolio/img-4@1x_md.webp 1x,
+																 ./images/portfolio/img-4@2x_md.webp 2x" type="image/webp" />
+
+								<source media="(min-width:768px)" srcset="./images/portfolio/img-4@1x_md.jpg 1x,
+																	./images/portfolio/img-4@2x_md.jpg 2x " type="image/jpg" />
+
+								<source media="(max-width:767px)" srcset="./images/portfolio/img-4@1x_sm.webp 1x,
+																	./images/portfolio/img-4@2x_sm.webp 2x" type="image/webp" />
+
+								<source media="(max-width:767px)" srcset="./images/portfolio/img-4@1x_sm.jpg 1x,
+																	./images/portfolio/img-4@2x_sm.jpg 2x " type="image/jpg" />
+
+								<img class="examples__img" src="./images/portfolio/img-4@1x_lg.jpg" alt="Навушники" width="450"
+									height="294">
+							</picture>
 							<div class="overlay">
 								<p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
 									Все це дозволить відвідувачу отримати
@@ -134,10 +214,30 @@
 					</a>
 				</li>
 				<li class="examples__item card-set__item">
-					<a class="link" href="">
+					<a class="examples__link link" href="">
 						<div class="examples__wrap">
-							<img class="examples__img" src="./images/portfolio/box.jpg" alt="Две коробки белого и коричневого цвета"
-								width="370" height="294">
+							<picture>
+								<source media="(min-width:1200px)" srcset="./images/portfolio/img-5@1x_lg.webp 1x,
+															 ./images/portfolio/img-5@2x_lg.webp 2x" type="image/webp" />
+
+								<source media="(min-width:1200px)" srcset="./images/portfolio/img-5@1x_lg.jpg 1x,
+																./images/portfolio/img-5@2x_lg.jpg 2x " type="image/jpg" />
+
+								<source media="(min-width:768px)" srcset="./images/portfolio/img-5@1x_md.webp 1x,
+															 ./images/portfolio/img-5@2x_md.webp 2x" type="image/webp" />
+
+								<source media="(min-width:768px)" srcset="./images/portfolio/img-5@1x_md.jpg 1x,
+																./images/portfolio/img-5@2x_md.jpg 2x " type="image/jpg" />
+
+								<source media="(max-width:767px)" srcset="./images/portfolio/img-5@1x_sm.webp 1x,
+																./images/portfolio/img-5@2x_sm.webp 2x" type="image/webp" />
+
+								<source media="(max-width:767px)" srcset="./images/portfolio/img-5@1x_sm.jpg 1x,
+																./images/portfolio/img-5@2x_sm.jpg 2x " type="image/jpg" />
+
+								<img class="examples__img" src="./images/portfolio/img-5@1x_lg.jpg"
+									alt="Два бокси білого та коричневого кольору" width="450" height="294">
+							</picture>
 							<div class="overlay">
 								<p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
 									Все це дозволить відвідувачу отримати
@@ -151,10 +251,30 @@
 					</a>
 				</li>
 				<li class="examples__item card-set__item">
-					<a class="link" href="">
+					<a class="examples__link link" href="">
 						<div class="examples__wrap">
-							<img class="examples__img" src="./images/portfolio/maps.jpg" alt="Карта мира на экране монитора"
-								width="370" height="294">
+							<picture>
+								<source media="(min-width:1200px)" srcset="./images/portfolio/img-6@1x_lg.webp 1x,
+																 ./images/portfolio/img-6@2x_lg.webp 2x" type="image/webp" />
+
+								<source media="(min-width:1200px)" srcset="./images/portfolio/img-6@1x_lg.jpg 1x,
+																	./images/portfolio/img-6@2x_lg.jpg 2x " type="image/jpg" />
+
+								<source media="(min-width:768px)" srcset="./images/portfolio/img-6@1x_md.webp 1x,
+																 ./images/portfolio/img-6@2x_md.webp 2x" type="image/webp" />
+
+								<source media="(min-width:768px)" srcset="./images/portfolio/img-6@1x_md.jpg 1x,
+																	./images/portfolio/img-6@2x_md.jpg 2x " type="image/jpg" />
+
+								<source media="(max-width:767px)" srcset="./images/portfolio/img-6@1x_sm.webp 1x,
+																	./images/portfolio/img-6@2x_sm.webp 2x" type="image/webp" />
+
+								<source media="(max-width:767px)" srcset="./images/portfolio/img-6@1x_sm.jpg 1x,
+																	./images/portfolio/img-6@2x_sm.jpg 2x " type="image/jpg" />
+
+								<img class="examples__img" src="./images/portfolio/img-6@1x_lg.jpg" alt="Карта світу на екране монітора"
+									width="450" height="294">
+							</picture>
 							<div class="overlay">
 								<p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
 									Все це дозволить відвідувачу отримати
@@ -168,10 +288,30 @@
 					</a>
 				</li>
 				<li class="examples__item card-set__item">
-					<a class="link" href="">
+					<a class="examples__link link" href="">
 						<div class="examples__wrap">
-							<img class="examples__img" src="./images/portfolio/book.jpg" alt="Разворот книги" width="370"
-								height="294">
+							<picture>
+								<source media="(min-width:1200px)" srcset="./images/portfolio/img-7@1x_lg.webp 1x,
+																 ./images/portfolio/img-7@2x_lg.webp 2x" type="image/webp" />
+
+								<source media="(min-width:1200px)" srcset="./images/portfolio/img-7@1x_lg.jpg 1x,
+																	./images/portfolio/img-7@2x_lg.jpg 2x " type="image/jpg" />
+
+								<source media="(min-width:768px)" srcset="./images/portfolio/img-7@1x_md.webp 1x,
+																 ./images/portfolio/img-7@2x_md.webp 2x" type="image/webp" />
+
+								<source media="(min-width:768px)" srcset="./images/portfolio/img-7@1x_md.jpg 1x,
+																	./images/portfolio/img-7@2x_md.jpg 2x " type="image/jpg" />
+
+								<source media="(max-width:767px)" srcset="./images/portfolio/img-7@1x_sm.webp 1x,
+																	./images/portfolio/img-7@2x_sm.webp 2x" type="image/webp" />
+
+								<source media="(max-width:767px)" srcset="./images/portfolio/img-7@1x_sm.jpg 1x,
+																	./images/portfolio/img-7@2x_sm.jpg 2x " type="image/jpg" />
+
+								<img class="examples__img" src="./images/portfolio/img-7@1x_lg.jpg" alt="Розгорнута книга" width="450"
+									height="294">
+							</picture>
 							<div class="overlay">
 								<p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
 									Все це дозволить відвідувачу отримати
@@ -185,9 +325,30 @@
 					</a>
 				</li>
 				<li class="examples__item card-set__item">
-					<a class="link" href="">
+					<a class="examples__link link" href="">
 						<div class="examples__wrap">
-							<img class="examples__img" src="./images/portfolio/lab.jpg" alt="Лейбл на бирке" width="370" height="294">
+							<picture>
+								<source media="(min-width:1200px)" srcset="./images/portfolio/img-8@1x_lg.webp 1x,
+																 ./images/portfolio/img-8@2x_lg.webp 2x" type="image/webp" />
+
+								<source media="(min-width:1200px)" srcset="./images/portfolio/img-8@1x_lg.jpg 1x,
+																	./images/portfolio/img-8@2x_lg.jpg 2x " type="image/jpg" />
+
+								<source media="(min-width:768px)" srcset="./images/portfolio/img-8@1x_md.webp 1x,
+																 ./images/portfolio/img-8@2x_md.webp 2x" type="image/webp" />
+
+								<source media="(min-width:768px)" srcset="./images/portfolio/img-8@1x_md.jpg 1x,
+																	./images/portfolio/img-8@2x_md.jpg 2x " type="image/jpg" />
+
+								<source media="(max-width:767px)" srcset="./images/portfolio/img-8@1x_sm.webp 1x,
+																	./images/portfolio/img-8@2x_sm.webp 2x" type="image/webp" />
+
+								<source media="(max-width:767px)" srcset="./images/portfolio/img-8@1x_sm.jpg 1x,
+																	./images/portfolio/img-8@2x_sm.jpg 2x " type="image/jpg" />
+
+								<img class="examples__img" src="./images/portfolio/img-8@1x_lg.jpg" alt="Лейбл на бірці" width="450"
+									height="294">
+							</picture>
 							<div class="overlay">
 								<p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
 									Все це дозволить відвідувачу отримати
@@ -201,10 +362,30 @@
 					</a>
 				</li>
 				<li class="examples__item card-set__item">
-					<a class="link" href="">
+					<a class="examples__link link" href="">
 						<div class="examples__wrap">
-							<img class="examples__img" src="./images/portfolio/notebook.jpg" alt="Набор текста на ноутбуке"
-								width="370" height="294">
+							<picture>
+								<source media="(min-width:1200px)" srcset="./images/portfolio/img-9@1x_lg.webp 1x,
+																 ./images/portfolio/img-9@2x_lg.webp 2x" type="image/webp" />
+
+								<source media="(min-width:1200px)" srcset="./images/portfolio/img-9@1x_lg.jpg 1x,
+																	./images/portfolio/img-9@2x_lg.jpg 2x " type="image/jpg" />
+
+								<source media="(min-width:768px)" srcset="./images/portfolio/img-9@1x_md.webp 1x,
+																 ./images/portfolio/img-9@2x_md.webp 2x" type="image/webp" />
+
+								<source media="(min-width:768px)" srcset="./images/portfolio/img-9@1x_md.jpg 1x,
+																	./images/portfolio/img-9@2x_md.jpg 2x " type="image/jpg" />
+
+								<source media="(max-width:767px)" srcset="./images/portfolio/img-9@1x_sm.webp 1x,
+																	./images/portfolio/img-9@2x_sm.webp 2x" type="image/webp" />
+
+								<source media="(max-width:767px)" srcset="./images/portfolio/img-9@1x_sm.jpg 1x,
+																	./images/portfolio/img-9@2x_sm.jpg 2x " type="image/jpg" />
+
+								<img class="examples__img" src="./images/portfolio/img-9@1x_lg.jpg" alt="Набір тексту на ноутбуці"
+									width="450" height="294">
+							</picture>
 							<div class="overlay">
 								<p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
 									Все це дозволить відвідувачу отримати

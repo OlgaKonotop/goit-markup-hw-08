@@ -10,9 +10,9 @@
 .examples__list {
   display: flex;
   flex-wrap: wrap;
-  // gap: var(--indent);
+  gap: var(--indent);
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     --items: 1;
   }
   @media screen and (min-width: 768px) {
@@ -35,10 +35,22 @@
   }
 }
 
+.examples__link {
+  height: 100%;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .examples__wrap {
   position: relative;
   overflow: hidden;
 }
+
+// .examples__img {
+//   width: 100%;
+// }
 
 .overlay {
   position: absolute;
@@ -69,6 +81,10 @@
   color: #ffffff;
   padding-left: 24px;
   padding-right: 24px;
+
+  @media screen and (max-width: 340px) {
+    font-size: 12px;
+  }
 }
 
 .examples__name {
@@ -80,6 +96,10 @@
   padding-bottom: 20px;
   padding-right: 24px;
   padding-left: 24px;
+
+  @media screen and (min-width: 768px) {
+    flex-grow: 1;
+  }
 }
 .examples__title {
   margin-bottom: 4px;
