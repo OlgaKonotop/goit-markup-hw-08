@@ -1,10 +1,16 @@
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background-color: #f5f4fa;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .team__title {
   margin-bottom: 30px;
+
   @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
   }
